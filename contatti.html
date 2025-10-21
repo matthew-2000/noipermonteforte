@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti – Noi per Monteforte</title>
-    <meta name="description" content="Contatta Noi per Monteforte: email, social, punti di incontro e calendario degli appuntamenti sul territorio.">
+    <meta name="description" content="Contatta Noi per Monteforte: email, social, punti di incontro e calendario degli eventi sul territorio.">
     <meta property="og:title" content="Contatti – Noi per Monteforte">
     <meta property="og:description" content="Scrivici, seguici sui social o partecipa ai prossimi eventi della lista civica Noi per Monteforte.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noipermonteforte.example/contatti">
     <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="page-contact">
     <a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
 
     <header class="site-header is-solid" data-animate>
-        <div class="header-inner">
+        <div class="header-inner container">
             <a class="brand" href="index.html" aria-label="Noi per Monteforte">
-                <span class="brand-logo" aria-hidden="true">NP</span>
-                <span class="brand-text">Noi per Monteforte</span>
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="assets/img/logo.png" alt="" loading="lazy">
+                </span>
+                <span class="brand-text">
+                    <span>Lista civica</span>
+                    <span>Noi per Monteforte</span>
+                </span>
             </a>
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
                 <span class="menu-label">Menu</span>
@@ -37,63 +45,71 @@
     </header>
 
     <main id="contenuto">
-        <section class="page-hero page-hero--light" data-animate>
-            <p class="page-kicker">Parliamone insieme</p>
-            <h1>Ti aspettiamo online e sul territorio</h1>
-            <p class="page-lead">Scrivici, chiamaci o raggiungici negli appuntamenti itineranti. La nostra squadra è sempre a disposizione per ascoltare idee, segnalazioni e proposte.</p>
-        </section>
-
-        <section class="section section-light">
-            <div class="contact-grid">
-                <article class="contact-card" data-animate>
-                    <h2>Contatti diretti</h2>
-                    <ul>
-                        <li>Email: <a href="mailto:info@noipermonteforte.it">info@noipermonteforte.it</a></li>
-                        <li>Telefono: <a href="tel:+390825123456">+39 0825 123456</a></li>
-                        <li>PEC: <a href="mailto:noipermonteforte@pec.it">noipermonteforte@pec.it</a></li>
-                    </ul>
-                </article>
-                <article class="contact-card" data-animate>
-                    <h2>Seguici sui social</h2>
-                    <ul>
-                        <li><a href="https://facebook.com/noipermonteforte" target="_blank" rel="noreferrer">Facebook</a></li>
-                        <li><a href="https://instagram.com/noipermonteforte" target="_blank" rel="noreferrer">Instagram</a></li>
-                        <li><a href="https://t.me/noipermonteforte" target="_blank" rel="noreferrer">Telegram</a></li>
-                    </ul>
-                </article>
-                <article class="contact-card" data-animate>
-                    <h2>Punti di incontro</h2>
-                    <p>Ogni settimana siamo in un quartiere diverso con gazebo informativi, sportelli mobili e laboratori per famiglie.</p>
-                    <ul>
-                        <li>Lunedì: Centro civico “Aldo Moro”, ore 18:00</li>
-                        <li>Mercoledì: Piazza Umberto I, ore 19:00</li>
-                        <li>Sabato: Biblioteca comunale, ore 10:30</li>
-                    </ul>
-                </article>
-                <article class="contact-card contact-card--highlight" data-animate>
-                    <h2>Materiali e aggiornamenti</h2>
-                    <p>Scansiona il QR code per scaricare volantini, calendario eventi e il programma completo.</p>
-                    <img class="qr-code" src="https://via.placeholder.com/160x160.png?text=QR+Code" alt="QR code segnaposto">
-                </article>
+        <section class="page-hero" data-animate>
+            <div class="container">
+                <span class="page-kicker">Parliamone insieme</span>
+                <h1>Ti aspettiamo online e sul territorio</h1>
+                <p class="page-lead">Scrivici, chiamaci o raggiungici negli appuntamenti itineranti. Siamo sempre disponibili per ascoltare idee, segnalazioni e proposte.</p>
             </div>
         </section>
 
-        <section class="section">
-            <div class="section-heading" data-animate>
-                <h2>Iscriviti alla newsletter</h2>
-                <p>Ricevi aggiornamenti periodici sul programma, sulle attività e sugli eventi nei quartieri di Monteforte Irpino.</p>
+        <section class="section section--alt" data-animate>
+            <div class="container">
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <h2>Contatti diretti</h2>
+                        <ul>
+                            <li>Email: <a href="mailto:info@noipermonteforte.it">info@noipermonteforte.it</a></li>
+                            <li>Telefono: <a href="tel:+390825123456">+39 0825 123456</a></li>
+                            <li>PEC: <a href="mailto:noipermonteforte@pec.it">noipermonteforte@pec.it</a></li>
+                        </ul>
+                    </article>
+                    <article class="contact-card">
+                        <h2>Seguici sui social</h2>
+                        <ul>
+                            <li><a href="https://facebook.com/noipermonteforte" target="_blank" rel="noreferrer">Facebook</a></li>
+                            <li><a href="https://instagram.com/noipermonteforte" target="_blank" rel="noreferrer">Instagram</a></li>
+                            <li><a href="https://t.me/noipermonteforte" target="_blank" rel="noreferrer">Telegram</a></li>
+                        </ul>
+                    </article>
+                    <article class="contact-card">
+                        <h2>Punti di incontro</h2>
+                        <p>Ogni settimana siamo in un quartiere diverso con gazebo informativi, sportelli mobili e laboratori per famiglie.</p>
+                        <ul>
+                            <li>Lunedì: Centro civico “Aldo Moro”, ore 18:00</li>
+                            <li>Mercoledì: Piazza Umberto I, ore 19:00</li>
+                            <li>Sabato: Biblioteca comunale, ore 10:30</li>
+                        </ul>
+                    </article>
+                    <article class="contact-card contact-card--highlight">
+                        <h2>Materiali e aggiornamenti</h2>
+                        <p>Scansiona il QR code per scaricare volantini, calendario eventi e il programma completo.</p>
+                        <img class="qr-code" src="https://via.placeholder.com/160x160.png?text=QR+Code" alt="QR code segnaposto">
+                    </article>
+                </div>
             </div>
-            <form class="newsletter-form" data-animate>
-                <label for="newsletter-email">La tua email</label>
-                <input id="newsletter-email" type="email" name="email" placeholder="nome@example.com" required>
-                <button class="btn btn-accent" type="submit">Iscriviti</button>
-                <p class="form-note">I dati saranno utilizzati solo per inviare comunicazioni relative alla lista civica.</p>
-            </form>
+        </section>
+
+        <section class="section" data-animate>
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Iscriviti alla newsletter</h2>
+                    <p>Ricevi aggiornamenti periodici sul programma, sulle attività e sugli eventi nei quartieri di Monteforte Irpino.</p>
+                </div>
+                <form class="newsletter-form">
+                    <label for="newsletter-email">La tua email</label>
+                    <input id="newsletter-email" type="email" name="email" placeholder="nome@example.com" required>
+                    <button class="btn btn-primary" type="submit">Iscriviti</button>
+                    <p class="form-note">I dati saranno utilizzati solo per inviare comunicazioni relative alla lista civica.</p>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
+        <div class="container">
+            <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
+        </div>
     </footer>
 
     <script src="assets/js/script.js" defer></script>
