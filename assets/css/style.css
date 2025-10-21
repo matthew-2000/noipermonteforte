@@ -1,0 +1,167 @@
+/* ==========================
+   STILE BASE - NOI PER MONTEFORTE
+   ========================== */
+
+:root {
+    --primary: #1c5d99;         /* blu istituzionale */
+    --secondary: #f5f5f5;       /* grigio chiaro */
+    --accent: #f4b400;          /* giallo tenue */
+    --text: #222;
+    --text-light: #555;
+    --max-width: 1000px;
+}
+
+/* RESET E BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    background-color: white;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* CONTAINER PRINCIPALE */
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* HEADER E NAV */
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* HERO / HOME */
+.hero {
+    background: var(--secondary);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+/* TITOLI E SEZIONI */
+h2, h3, h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* CARD E GRID CANDIDATI */
+.candidates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h4 {
+    margin: 0.8rem 1rem 0.3rem;
+    color: var(--primary);
+}
+
+.card p {
+    margin: 0 1rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+/* LISTE */
+ul {
+    list-style: disc inside;
+    margin-left: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+        width: 100%;
+    }
+    .hero {
+        padding: 2.5rem 1rem;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
