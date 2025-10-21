@@ -1,88 +1,165 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Chi siamo — Noi per Monteforte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi siamo – Noi per Monteforte</title>
+    <meta name="description" content="Conosci la squadra di Noi per Monteforte: la candidata sindaco Giulia Valentino e i 12 candidati pronti a guidare Monteforte Irpino con energia e competenza.">
+    <meta property="og:title" content="Chi siamo – Noi per Monteforte">
+    <meta property="og:description" content="Scopri la candidata sindaco e la squadra multidisciplinare della lista civica Noi per Monteforte.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noipermonteforte.example/chi-siamo">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1>Noi per Monteforte</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="chi-siamo.html">Chi siamo</a>
-            <a href="programma.html">Programma</a>
-            <a href="contatti.html">Contatti</a>
-        </nav>
-    </div>
-</header>
+    <a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
 
-<main class="container" style="padding:2rem 0;">
-    <section>
-        <h2>La nostra lista</h2>
-        <p>
-            "Noi per Monteforte" è una lista civica composta da cittadine e cittadini
-            che vogliono mettere le proprie competenze al servizio del paese.
-            Uniti dalla convinzione che la politica locale debba essere concreta,
-            trasparente e vicino alla gente.
-        </p>
-    </section>
+    <header class="site-header" data-animate>
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Noi per Monteforte">
+                <span class="brand-logo" aria-hidden="true">NP</span>
+                <span class="brand-text">Noi per Monteforte</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="menu-label">Menu</span>
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+            <nav id="primary-navigation" class="primary-nav" aria-label="Navigazione principale">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chi-siamo.html" aria-current="page">Chi siamo</a></li>
+                    <li><a href="programma.html">Programma</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <section style="margin-top:2rem;">
-        <h3>La candidata a Sindaco</h3>
-        <div class="card">
-            <img src="assets/img/giulia-valentino.jpg" alt="Giulia Valentino" style="max-width:160px;">
-            <div>
-                <h4>Giulia Valentino — 42 anni</h4>
-                <p>Insegnante, impegnata nel volontariato locale. Candidata sindaco per guidare il rilancio dei servizi comunali.</p>
+    <main id="contenuto">
+        <section class="page-hero" data-animate>
+            <p class="page-kicker">La nostra lista</p>
+            <h1>Persone competenti, un’unica visione</h1>
+            <p class="page-lead">Una squadra giovane e professionale, cresciuta ascoltando il territorio e costruendo soluzioni concrete per Monteforte Irpino.</p>
+        </section>
+
+        <section class="section section-light" id="giulia-valentino">
+            <div class="section-heading" data-animate>
+                <h2>Giulia Valentino – candidata sindaco</h2>
+                <p>Architetta urbanista, attiva nel volontariato civico e nella progettazione partecipata. Coordina gruppi di lavoro tematici e crede in un Comune vicino, digitale e trasparente.</p>
             </div>
-        </div>
-    </section>
+            <div class="leader" data-animate>
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Ritratto della candidata sindaco Giulia Valentino" loading="lazy">
+                <div class="leader-text">
+                    <h3>Impegno per Monteforte</h3>
+                    <p>Giulia ha guidato progetti di rigenerazione urbana e percorsi di democrazia partecipativa in diversi comuni campani. È convinta che una buona amministrazione inizi dall’ascolto e dalla possibilità di misurare i risultati.</p>
+                    <p>Per Monteforte propone una “città laboratorio”: spazi aperti per giovani, servizi digitali capillari e un piano ambientale che unisca aree urbane e zone collinari.</p>
+                    <ul class="leader-points">
+                        <li>Trasparenza amministrativa con bilanci aperti e monitoraggio trimestrale.</li>
+                        <li>Piani urbani sostenibili, con particolare attenzione a scuole, piazze e mobilità dolce.</li>
+                        <li>Sportelli di ascolto itineranti in tutti i quartieri.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section style="margin-top:2rem;">
-        <h3>I candidati</h3>
+        <section class="section">
+            <div class="section-heading" data-animate>
+                <h2>La squadra</h2>
+                <p>Dodici candidati con competenze complementari: ambiente, innovazione, cultura, welfare. Tutti uniti dalla voglia di offrire un’amministrazione efficiente e vicina alle persone.</p>
+            </div>
+            <div class="candidates">
+                <div class="candidates-grid">
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Alessandro Rinaldi" loading="lazy">
+                        <h4>Alessandro Rinaldi</h4>
+                        <p>Ingegnere energetico, lavora su progetti per l’efficientamento di scuole e edifici pubblici.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Martina De Luca" loading="lazy">
+                        <h4>Martina De Luca</h4>
+                        <p>Esperta di comunicazione digitale, cura la relazione quotidiana con cittadini e associazioni.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Chiara Romano" loading="lazy">
+                        <h4>Chiara Romano</h4>
+                        <p>Assistente sociale, si occupa di welfare comunitario e sostegno alle famiglie fragili.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Luca Bianchi" loading="lazy">
+                        <h4>Luca Bianchi</h4>
+                        <p>Imprenditore agricolo, promuove filiere corte e innovazione per le aziende del territorio.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Elena Moretti" loading="lazy">
+                        <h4>Elena Moretti</h4>
+                        <p>Avvocata, segue legalità, anticorruzione e semplificazione amministrativa.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Federica De Simone" loading="lazy">
+                        <h4>Federica De Simone</h4>
+                        <p>Educatrice professionale, progetta percorsi educativi per scuole e centri culturali.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Marco Esposito" loading="lazy">
+                        <h4>Marco Esposito</h4>
+                        <p>Project manager, introduce strumenti di monitoraggio per cantieri e lavori pubblici.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Alessia Gallo" loading="lazy">
+                        <h4>Alessia Gallo</h4>
+                        <p>Biologa ambientale, guida i progetti di rinverdimento e tutela delle aree naturalistiche.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Davide Monti" loading="lazy">
+                        <h4>Davide Monti</h4>
+                        <p>Esperto di mobilità sostenibile, lavora su percorsi sicuri per pedoni e ciclisti.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Sara Leone" loading="lazy">
+                        <h4>Sara Leone</h4>
+                        <p>Consulente finanziaria, segue il bilancio partecipato e il supporto alle famiglie.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Pietro Santoro" loading="lazy">
+                        <h4>Pietro Santoro</h4>
+                        <p>Ingegnere informatico, digitalizza i servizi comunali e sviluppa sportelli online.</p>
+                    </article>
+                    <article class="candidate-card" data-animate>
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Ritratto di Valentina Russo" loading="lazy">
+                        <h4>Valentina Russo</h4>
+                        <p>Volontaria di protezione civile, coordina piani di sicurezza e formazione.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <div class="candidates-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;">
-            <article class="card">
-                <img src="assets/img/matteo-ercolino.jpg" alt="Matteo Ercolino" style="width:100%;height:160px;object-fit:cover;">
-                <h4>Matteo Ercolino — 25 anni</h4>
-                <p>Laureato in Informatica. Si candida per portare idee su digitalizzazione e partecipazione giovanile.</p>
-            </article>
+        <section class="section section-light">
+            <div class="section-heading" data-animate>
+                <h2>Come lavoriamo</h2>
+                <p>Organizzazione, ascolto e valutazione costante. Ogni progetto viene seguito da team dedicati e monitorato insieme ai cittadini.</p>
+            </div>
+            <div class="method-grid">
+                <article class="method-card" data-animate>
+                    <h3>Tavoli di quartiere</h3>
+                    <p>Incontri mensili diffusi sul territorio per raccogliere esigenze e presentare gli avanzamenti dei progetti.</p>
+                </article>
+                <article class="method-card" data-animate>
+                    <h3>Task force tematiche</h3>
+                    <p>Gruppi di lavoro su ambiente, giovani, servizi e cultura con professionisti e associazioni locali.</p>
+                </article>
+                <article class="method-card" data-animate>
+                    <h3>Bilancio aperto</h3>
+                    <p>Piattaforma digitale con dati, grafici e cronoprogrammi, aggiornata trimestralmente.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-            <article class="card">
-                <img src="assets/img/anna-rossi.jpg" alt="Anna Rossi" style="width:100%;height:160px;object-fit:cover;">
-                <h4>Anna Rossi — 36 anni</h4>
-                <p>Imprenditrice locale, attenzione alle attività commerciali e turismo di prossimità.</p>
-            </article>
+    <footer class="site-footer">
+        <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
+    </footer>
 
-            <article class="card">
-                <img src="assets/img/luigi-bianchi.jpg" alt="Luigi Bianchi" style="width:100%;height:160px;object-fit:cover;">
-                <h4>Luigi Bianchi — 58 anni</h4>
-                <p>Volontario associazioni sportive. Si impegna su impianti e spazi di aggregazione.</p>
-            </article>
-
-            <article class="card">
-                <img src="assets/img/maria-esposito.jpg" alt="Maria Esposito" style="width:100%;height:160px;object-fit:cover;">
-                <h4>Maria Esposito — 29 anni</h4>
-                <p>Operatrice sociale, priorità al sociale e alla partecipazione delle famiglie.</p>
-            </article>
-        </div>
-    </section>
-
-    <section style="margin-top:2rem;">
-        <h3>Il nostro metodo</h3>
-        <ul>
-            <li>Ascolto reale dei cittadini (sportelli e passeggiate di quartiere).</li>
-            <li>Trasparenza nelle scelte e rendicontazione delle attività.</li>
-            <li>Proposte concrete, basate su priorità e fattibilità.</li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-    <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
-</footer>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>

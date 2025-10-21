@@ -1,75 +1,129 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Programma — Noi per Monteforte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programma – Noi per Monteforte</title>
+    <meta name="description" content="Leggi il programma amministrativo di Noi per Monteforte: ambiente, trasparenza, giovani, servizi e comunità.">
+    <meta property="og:title" content="Programma – Noi per Monteforte">
+    <meta property="og:description" content="Ambiente, trasparenza, servizi e giovani: scopri le proposte concrete della lista civica Noi per Monteforte.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://noipermonteforte.example/programma">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1>Noi per Monteforte</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="chi-siamo.html">Chi siamo</a>
-            <a href="programma.html">Programma</a>
-            <a href="contatti.html">Contatti</a>
-        </nav>
-    </div>
-</header>
+    <a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
 
-<main class="container" style="padding:2rem 0;">
-    <h2>Programma - punti concreti e realizzabili</h2>
+    <header class="site-header is-solid" data-animate>
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Noi per Monteforte">
+                <span class="brand-logo" aria-hidden="true">NP</span>
+                <span class="brand-text">Noi per Monteforte</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="menu-label">Menu</span>
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+            <nav id="primary-navigation" class="primary-nav" aria-label="Navigazione principale">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chi-siamo.html">Chi siamo</a></li>
+                    <li><a href="programma.html" aria-current="page">Programma</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <section style="margin-top:1rem;">
-        <h3>1. Giovani e occupazione</h3>
-        <ul>
-            <li>Sportello giovani: orientamento al lavoro, formazione digitale e corsi base di coding per i ragazzi.</li>
-            <li>Spazi di coworking nei locali comunali inutilizzati per favorire smart working e startup locali.</li>
-        </ul>
-    </section>
+    <main id="contenuto">
+        <section class="page-hero page-hero--light" data-animate>
+            <p class="page-kicker">Il nostro progetto</p>
+            <h1>Un piano concreto per Monteforte 2025-2030</h1>
+            <p class="page-lead">Cinque pilastri, obiettivi misurabili e un metodo di rendicontazione pubblica per trasformare le idee in risultati.</p>
+        </section>
 
-    <section style="margin-top:1rem;">
-        <h3>2. Trasparenza e partecipazione</h3>
-        <ul>
-            <li>Pubblicazione sul sito comunale dei bandi e dei bilanci in forma semplificata.</li>
-            <li>Incontri trimestrali aperti ai cittadini con report pubblici e verbali sintetici online.</li>
-        </ul>
-    </section>
+        <section class="section section-light">
+            <div class="program-grid">
+                <article class="program-card" id="ambiente" data-animate>
+                    <span class="program-icon" aria-hidden="true">🌱</span>
+                    <h3>Ambiente e verde urbano</h3>
+                    <p>Riconnettere Monteforte alla sua natura con interventi diffusi e facili da monitorare.</p>
+                    <ul class="program-list">
+                        <li>Nuovi parchi di quartiere con manutenzione condivisa con associazioni locali.</li>
+                        <li>Riforestazione delle aree collinari e sentieri attrezzati per turismo lento.</li>
+                        <li>Bonus comunale per installare pannelli fotovoltaici e sistemi di accumulo domestici.</li>
+                    </ul>
+                </article>
+                <article class="program-card" id="trasparenza" data-animate>
+                    <span class="program-icon" aria-hidden="true">🤝</span>
+                    <h3>Trasparenza e partecipazione</h3>
+                    <p>Ogni cittadino informato, coinvolto e in grado di controllare il lavoro dell’amministrazione.</p>
+                    <ul class="program-list">
+                        <li>Piattaforma open data con cronoprogrammi, costi e stato di avanzamento dei progetti.</li>
+                        <li>Assemblee pubbliche trimestrali e sportello mobile nei quartieri.</li>
+                        <li>Regolamento di partecipazione aggiornato con strumenti digitali di voto e consultazione.</li>
+                    </ul>
+                </article>
+                <article class="program-card" id="giovani" data-animate>
+                    <span class="program-icon" aria-hidden="true">🎓</span>
+                    <h3>Giovani e formazione</h3>
+                    <p>Monteforte come luogo in cui crescere professionalmente, creare impresa e condividere cultura.</p>
+                    <ul class="program-list">
+                        <li>Coworking comunale con servizi di mentorship e sportello start-up.</li>
+                        <li>Spazi studio aperti la sera con biblioteche digitali e tutoraggio volontario.</li>
+                        <li>Borse per progetti di innovazione sociale promossi da studenti e associazioni.</li>
+                    </ul>
+                </article>
+                <article class="program-card" id="servizi" data-animate>
+                    <span class="program-icon" aria-hidden="true">🚍</span>
+                    <h3>Servizi e mobilità</h3>
+                    <p>Una rete efficiente per muoversi, accedere ai servizi e vivere quartieri sicuri e curati.</p>
+                    <ul class="program-list">
+                        <li>Navette scolastiche sicure con tracciamento in tempo reale per le famiglie.</li>
+                        <li>Piano “strade sicure” con piste ciclabili, illuminazione smart e marciapiedi accessibili.</li>
+                        <li>Sportelli digitali per pratiche anagrafiche, tributi e segnalazioni rapide.</li>
+                    </ul>
+                </article>
+                <article class="program-card" id="comunita" data-animate>
+                    <span class="program-icon" aria-hidden="true">❤️</span>
+                    <h3>Comunità solidale</h3>
+                    <p>Una rete di sostegno per famiglie, anziani e associazioni che rende Monteforte più unita.</p>
+                    <ul class="program-list">
+                        <li>Centri di comunità polifunzionali aperti a volontariato, sport e cultura.</li>
+                        <li>Sportelli socio-sanitari itineranti e servizi domiciliari coordinati.</li>
+                        <li>Fondo comunale per progetti sociali, cofinanziato da privati e bandi europei.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    <section style="margin-top:1rem;">
-        <h3>3. Manutenzione, viabilità e sicurezza</h3>
-        <ul>
-            <li>Piano annuale interventi stradali con priorità per scuole, mercato e vie principali.</li>
-            <li>Miglioramento illuminazione pubblica e controllo decoro nelle aree verdi.</li>
-        </ul>
-    </section>
+        <section class="section">
+            <div class="section-heading" data-animate>
+                <h2>Monitoraggio e rendicontazione</h2>
+                <p>Ogni obiettivo ha tempi, indicatori e responsabili chiari. Aggiorniamo i cittadini con report periodici e strumenti digitali aperti.</p>
+            </div>
+            <div class="monitoring-grid">
+                <article class="monitoring-card" data-animate>
+                    <h3>Dashboard pubblica</h3>
+                    <p>Una piattaforma online con grafici dinamici, documenti e stato avanzamento lavori.</p>
+                </article>
+                <article class="monitoring-card" data-animate>
+                    <h3>Report semestrali</h3>
+                    <p>Bilanci di mandato con risultati, criticità e nuove azioni, presentati in assemblee aperte.</p>
+                </article>
+                <article class="monitoring-card" data-animate>
+                    <h3>Coinvolgimento attivo</h3>
+                    <p>Gruppi di cittadini facilitatori che aiutano a raccogliere feedback e proposte dai quartieri.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-    <section style="margin-top:1rem;">
-        <h3>4. Ambiente e vivibilità</h3>
-        <ul>
-            <li>Programma di raccolta differenziata porta a porta e punti di riciclo per rifiuti elettronici.</li>
-            <li>Iniziative di piantumazione e cura degli spazi pubblici con associazioni locali.</li>
-        </ul>
-    </section>
+    <footer class="site-footer">
+        <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
+    </footer>
 
-    <section style="margin-top:1rem;">
-        <h3>5. Servizi sociali e salute</h3>
-        <ul>
-            <li>Supporto a famiglie in difficoltà con accesso facilitato a servizi territoriali.</li>
-            <li>Collaborazione con ASL per servizi sanitari di base e campagne informative.</li>
-        </ul>
-    </section>
-
-    <section style="margin-top:1.5rem;">
-        <h4>Nota sul programma</h4>
-        <p>Ogni punto del programma è pensato per essere concreto e realizzabile con risorse comunali e collaborazioni con enti e associazioni locali. Priorità, tempi e costi saranno definiti con trasparenza in caso di mandato.</p>
-    </section>
-</main>
-
-<footer>
-    <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
-</footer>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
