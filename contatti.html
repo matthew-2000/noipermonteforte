@@ -14,35 +14,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Icone: Lucide (generiche) + Bootstrap Icons (brand) -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="page-contact">
-    <a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
+<a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
 
-    <header class="site-header is-solid" data-animate>
-        <div class="header-inner container">
-            <a class="brand" href="index.html" aria-label="Noi per Monteforte">
+<header class="site-header is-solid" data-animate>
+    <div class="header-inner container">
+        <a class="brand" href="index.html" aria-label="Noi per Monteforte">
                 <span class="brand-mark" aria-hidden="true">
                     <img src="assets/img/logo.png" alt="" loading="lazy">
                 </span>
-                <span class="brand-text">
+            <span class="brand-text">
                     <span>Lista civica</span>
                     <span>Noi per Monteforte</span>
                 </span>
-            </a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-                <span class="menu-label">Menu</span>
-                <span class="menu-icon" aria-hidden="true"></span>
-            </button>
-            <nav id="primary-navigation" class="primary-nav" aria-label="Navigazione principale">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="chi-siamo.html">Chi siamo</a></li>
-                    <li><a href="programma.html">Programma</a></li>
-                    <li><a href="contatti.html" aria-current="page">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-label">Menu</span>
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-navigation" class="primary-nav" aria-label="Navigazione principale">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chi-siamo.html">Chi siamo</a></li>
+                <li><a href="programma.html">Programma</a></li>
+                <li><a href="contatti.html" aria-current="page">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main id="contenuto">
         <section class="page-hero" data-animate>
@@ -53,66 +57,62 @@
             </div>
         </section>
 
-        <section class="section section--alt" data-animate>
-            <div class="container">
-                <div class="contact-grid">
-                    <article class="contact-card">
-                        <h2>Contatti diretti</h2>
-                        <ul>
-                            <li>Email: <a href="mailto:info@noipermonteforte.it">info@noipermonteforte.it</a></li>
-                            <li>Telefono: <a href="tel:+390825123456">+39 0825 123456</a></li>
-                            <li>PEC: <a href="mailto:noipermonteforte@pec.it">noipermonteforte@pec.it</a></li>
-                        </ul>
-                    </article>
-                    <article class="contact-card">
-                        <h2>Seguici sui social</h2>
-                        <ul>
-                            <li><a href="https://facebook.com/noipermonteforte" target="_blank" rel="noreferrer">Facebook</a></li>
-                            <li><a href="https://instagram.com/noipermonteforte" target="_blank" rel="noreferrer">Instagram</a></li>
-                            <li><a href="https://t.me/noipermonteforte" target="_blank" rel="noreferrer">Telegram</a></li>
-                        </ul>
-                    </article>
-                    <article class="contact-card">
-                        <h2>Punti di incontro</h2>
-                        <p>Ogni settimana siamo in un quartiere diverso con gazebo informativi, sportelli mobili e laboratori per famiglie.</p>
-                        <ul>
-                            <li>Lunedì: Centro civico “Aldo Moro”, ore 18:00</li>
-                            <li>Mercoledì: Piazza Umberto I, ore 19:00</li>
-                            <li>Sabato: Biblioteca comunale, ore 10:30</li>
-                        </ul>
-                    </article>
-                    <article class="contact-card contact-card--highlight">
-                        <h2>Materiali e aggiornamenti</h2>
-                        <p>Scansiona il QR code per scaricare volantini, calendario eventi e il programma completo.</p>
-                        <img class="qr-code" src="https://via.placeholder.com/160x160.png?text=QR+Code" alt="QR code segnaposto">
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" data-animate>
-            <div class="container">
-                <div class="section-heading">
-                    <h2>Iscriviti alla newsletter</h2>
-                    <p>Ricevi aggiornamenti periodici sul programma, sulle attività e sugli eventi nei quartieri di Monteforte Irpino.</p>
-                </div>
-                <form class="newsletter-form">
-                    <label for="newsletter-email">La tua email</label>
-                    <input id="newsletter-email" type="email" name="email" placeholder="nome@example.com" required>
-                    <button class="btn btn-primary" type="submit">Iscriviti</button>
-                    <p class="form-note">I dati saranno utilizzati solo per inviare comunicazioni relative alla lista civica.</p>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
+    <section class="section section--alt" data-animate>
         <div class="container">
-            <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
-            <p>Made with ❤️ by Matteo Ercolino</p>
-        </div>
-    </footer>
+            <div class="contact-grid">
+                <article class="contact-card">
+                    <h2><i data-lucide="mail" aria-hidden="true"></i> Contatti diretti</h2>
+                    <p>I canali ufficiali di contatto (email, telefono e PEC) saranno attivi a breve.</p>
+                    <ul>
+                        <li>Email: <span>in aggiornamento</span></li>
+                        <li>Telefono: <span>in aggiornamento</span></li>
+                        <li>PEC: <span>in aggiornamento</span></li>
+                    </ul>
+                </article>
 
-    <script src="assets/js/script.js" defer></script>
+                <article class="contact-card">
+                    <h2><i data-lucide="users" aria-hidden="true"></i> Seguici sui social</h2>
+                    <ul class="social-links">
+                        <li><i class="bi bi-facebook" aria-hidden="true"></i> <a href="https://facebook.com/noipermonteforte" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><i class="bi bi-instagram" aria-hidden="true"></i> <a href="https://instagram.com/noipermonteforte" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><i class="bi bi-telegram" aria-hidden="true"></i> <a href="https://t.me/noipermonteforte" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                    </ul>
+                </article>
+
+                <article class="contact-card">
+                    <h2><i data-lucide="map-pin" aria-hidden="true"></i> Punti di incontro</h2>
+                    <p>Gli appuntamenti sul territorio sono in fase di definizione. Pubblicheremo presto date, orari e luoghi degli incontri nei quartieri.</p>
+                    <ul>
+                        <li><em>Calendario in arrivo</em></li>
+                    </ul>
+                </article>
+
+                <article class="contact-card contact-card--highlight">
+                    <h2><i data-lucide="file-text" aria-hidden="true"></i> Materiali e aggiornamenti</h2>
+                    <p>A breve sarà disponibile il file completo del programma e dei materiali informativi della lista civica.</p>
+                    <img class="qr-code" src="https://via.placeholder.com/160x160.png?text=QR+Code" alt="QR code segnaposto per file programma in arrivo">
+                </article>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 Noi per Monteforte – Lista civica Monteforte Irpino</p>
+        <p>Made with ❤️ by Matteo Ercolino</p>
+    </div>
+</footer>
+
+<script>
+    // Inizializza le icone Lucide quando il DOM è pronto
+    document.addEventListener('DOMContentLoaded', function () {
+        if (window.lucide && typeof lucide.createIcons === 'function') {
+            lucide.createIcons();
+        }
+    });
+</script>
+<script src="assets/js/script.js" defer></script>
 </body>
 </html>
