@@ -109,28 +109,132 @@
             </div>
         </section>
 
-        <section class="section section--alt" data-animate>
+        <section class="section" id="candidati" data-animate>
             <div class="container">
                 <div class="section-heading">
-                    <h2>Come lavoriamo</h2>
-                    <p>Trasparenza, ascolto e responsabilità sono il nostro metodo. Nessuno nasce amministratore: lo si diventa dedicando tempo, competenze e rispetto alla propria comunità.</p>
+                    <h2>I candidati della lista “Noi per Monteforte”</h2>
+                    <p>Una squadra di cittadini motivati e competenti, uniti dal desiderio di costruire un futuro concreto e condiviso per Monteforte Irpino.</p>
                 </div>
-                <div class="method-grid">
-                    <article class="method-card">
-                        <h3>Tavoli di quartiere</h3>
-                        <p>Calendario di incontri e sportelli itineranti nelle frazioni per ascoltare bisogni e proposte, costruendo soluzioni insieme ai cittadini.</p>
+
+                <div class="candidates-grid">
+                    <article class="candidate-card">
+                        <h4>Donatella Buglione</h4>
+                        <p></p>
                     </article>
-                    <article class="method-card">
-                        <h3>Gruppi di lavoro tematici</h3>
-                        <p>Squadre composte da professionisti e volontari per approfondire bilancio, sicurezza, cultura e servizi sociali.</p>
+
+                    <article class="candidate-card">
+                        <h4>Giuseppina Carraturo</h4>
+                        <p></p>
                     </article>
-                    <article class="method-card">
-                        <h3>Trasparenza quotidiana</h3>
-                        <p>Rendicontazione puntuale delle decisioni, selezione pubblica dei fornitori e comunicazione chiara delle risorse impiegate.</p>
+
+                    <article class="candidate-card">
+                        <h4>Natascha Cilio</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Salvatore D'Amore</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Annarita De Micco</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Sara De Vito</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Gianvito Della Bella <small>(detto “Geni”)</small></h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Angelo Damiano</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card" id="matteo-ercolino">
+                        <a href="#" class="candidate-link" data-profile="matteo-ercolino">
+                            <h4>Matteo Ercolino</h4>
+<!--                            <p>25 anni, sviluppatore informatico. Laureato magistrale in Informatica, impegnato nella ricerca e nell’innovazione tecnologica.</p>-->
+                        </a>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Carmine Marinelli</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Mirko Marano</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Giuseppe Martone</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Mario Montuori</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Antonio Nazzaro</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Vincenza Antonia Vacca</h4>
+                        <p></p>
+                    </article>
+
+                    <article class="candidate-card">
+                        <h4>Guido Vinciguerra</h4>
+                        <p></p>
                     </article>
                 </div>
             </div>
         </section>
+
+        <!-- Popup profilo Matteo Ercolino -->
+        <div class="profile-popup" id="popup-matteo">
+            <button class="profile-popup__close" aria-label="Chiudi profilo"><span>✕</span></button>
+            <div class="profile-popup__image">
+                <img src="assets/img/candidati/ercolino.png" alt="Foto di Matteo Ercolino">
+            </div>
+            <div class="profile-popup__content">
+                <h3 class="profile-popup__title">Matteo Ercolino</h3>
+                <p class="profile-popup__text">25 anni, sviluppatore informatico. Laureato magistrale in Informatica, impegnato nella ricerca e nell’innovazione tecnologica per rendere la digitalizzazione utile e vicina ai cittadini.</p>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const trigger = document.querySelector('[data-profile="matteo-ercolino"]');
+                const popup = document.getElementById('popup-matteo');
+                const closeBtn = popup.querySelector('.profile-popup__close');
+
+                trigger.addEventListener('click', e => {
+                    e.preventDefault();
+                    popup.classList.add('is-visible');
+                });
+
+                closeBtn.addEventListener('click', () => {
+                    popup.classList.remove('is-visible');
+                });
+
+                popup.addEventListener('click', e => {
+                    if (e.target === popup) popup.classList.remove('is-visible');
+                });
+            });
+        </script>
+
     </main>
 
     <footer class="site-footer">
