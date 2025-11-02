@@ -63,7 +63,13 @@
                 });
             },
             {
-                threshold: 0.15,
+                // Mobile devices render some sections (like the candidates list)
+                // in a single column, making them very tall. With the previous
+                // 0.15 threshold the observer never reached the required
+                // intersection ratio on phones, so the entire section remained
+                // hidden. Observing from 1% onward ensures the animation always
+                // triggers while keeping a smoother reveal on larger viewports.
+                threshold: [0.01, 0.15],
                 rootMargin: '0px 0px -50px 0px',
             }
         );
