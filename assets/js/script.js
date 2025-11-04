@@ -79,11 +79,12 @@
         animatedElements.forEach((el) => el.classList.add('is-visible'));
     }
 
-    // === ⚙️ POPUP MODIFICATO ===
+    // === 📣 POPUP EVENTO PRESENTAZIONE LISTA ===
 
-    const POPUP_STORAGE_KEY = 'npMonteforteProfilePopupSeen_v1';
-    const POPUP_DELAY = 300000;
-    const ONE_DAY_MS = 24 * 60 * 60 * 1000; // 1 giorno in millisecondi
+    const EVENT_POPUP_STORAGE_KEY = 'npMonteforteEventPopupDismissed_v1';
+    const EVENT_POPUP_COOLDOWN = 6 * 60 * 60 * 1000; // 6 ore
+    const EVENT_POPUP_DELAY = 1800; // mostra dopo ~1.8 secondi
+    const EVENT_POPUP_DEADLINE = new Date('2025-11-07T19:00:00+01:00').getTime();
 
     const safeSetStorage = (key, value) => {
         try {
@@ -99,91 +100,81 @@
         }
     };
 
-    const focusElement = (element) => {
-        if (!element) return;
-        try {
-            element.focus({ preventScroll: true });
-        } catch (_) {
-            element.focus();
-        }
-    };
-
-    const createProfilePopup = () => {
-        const previouslyFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const buildEventPopup = () => {
         const popup = document.createElement('section');
-        popup.className = 'profile-popup';
+        popup.className = 'event-popup';
         popup.setAttribute('role', 'dialog');
-        popup.setAttribute('aria-label', 'Presentazione del candidato');
-        popup.setAttribute('tabindex', '-1');
+        popup.setAttribute('aria-label', 'Presentazione ufficiale della lista civica');
+        popup.setAttribute('aria-modal', 'false');
         popup.innerHTML = `
-            <button class="profile-popup__close" type="button" aria-label="Chiudi presentazione">
-                <span>×</span>
-            </button>
-            <div class="profile-popup__image" aria-hidden="true">
-                <img src="assets/img/matteo.png" alt="" loading="lazy">
+            <div class="event-popup__media" aria-hidden="true">
+                <img src="assets/img/logo.png" alt="" loading="lazy">
             </div>
-            <div class="profile-popup__content">
-                <p class="profile-popup__title">Matteo Ercolino</p>
-                <p class="profile-popup__text">Mi chiamo Matteo Ercolino, ho 25 anni e sono uno sviluppatore informatico.
-                Ho deciso di candidarmi perché credo che la mia generazione debba tornare protagonista.
-                Voglio ricreare una comunità di giovani montefortesi, portare idee concrete e innovazione utile, e rendere Monteforte un paese dove valga la pena restare e costruire il futuro.</p>
+            <div class="event-popup__content">
+                <span class="event-popup__eyebrow">Evento in evidenza</span>
+                <p class="event-popup__title">Presentazione ufficiale della lista e del programma</p>
+                <div class="event-popup__details">
+                    <span>🗓️ Venerdì 7 Novembre – ore 20:00</span>
+                    <span>📍 Comitato elettorale, via Alvanella</span>
+                </div>
+                <div class="event-popup__actions">
+                    <button type="button" class="event-popup__close" aria-label="Chiudi promemoria">Chiudi</button>
+                    <a class="event-popup__link" href="#eventi">Scopri di più</a>
+                </div>
             </div>
         `;
 
-        const removePopup = () => {
-            popup.remove();
-            focusElement(previouslyFocusedElement);
-        };
-
-        const closePopup = () => {
+        const dismissPopup = () => {
             popup.classList.remove('is-visible');
-
-            const onTransitionEnd = () => removePopup();
-            popup.addEventListener('transitionend', onTransitionEnd, { once: true });
-
-            const { transitionDuration, transitionDelay } = window.getComputedStyle(popup);
-            const duration = parseFloat(transitionDuration) || 0;
-            const delay = parseFloat(transitionDelay) || 0;
-            if (duration + delay === 0) removePopup();
+            popup.addEventListener('transitionend', () => popup.remove(), { once: true });
+            const styles = window.getComputedStyle(popup);
+            const duration = parseFloat(styles.transitionDuration) || 0;
+            const delay = parseFloat(styles.transitionDelay) || 0;
+            if (duration + delay === 0) popup.remove();
         };
 
-        popup.querySelector('.profile-popup__close')?.addEventListener('click', () => {
-            safeSetStorage(POPUP_STORAGE_KEY, Date.now().toString());
-            closePopup();
+        popup.querySelector('.event-popup__close')?.addEventListener('click', () => {
+            safeSetStorage(EVENT_POPUP_STORAGE_KEY, Date.now().toString());
+            dismissPopup();
         });
 
         popup.addEventListener('keydown', (event) => {
             if (event.key === 'Escape') {
-                safeSetStorage(POPUP_STORAGE_KEY, Date.now().toString());
-                closePopup();
+                safeSetStorage(EVENT_POPUP_STORAGE_KEY, Date.now().toString());
+                dismissPopup();
             }
+        });
+
+        popup.querySelector('.event-popup__link')?.addEventListener('click', () => {
+            safeSetStorage(EVENT_POPUP_STORAGE_KEY, Date.now().toString());
+            dismissPopup();
         });
 
         document.body.appendChild(popup);
 
         requestAnimationFrame(() => {
             popup.classList.add('is-visible');
-            focusElement(popup);
         });
     };
 
-    const showProfilePopupOncePerDay = () => {
-        if (!('localStorage' in window)) return;
-        const lastSeen = parseInt(safeGetStorage(POPUP_STORAGE_KEY) || '0', 10);
+    const maybeShowEventPopup = () => {
+        if (!document.body.classList.contains('page-home')) return;
         const now = Date.now();
+        if (now >= EVENT_POPUP_DEADLINE) return;
 
-        // Mostra solo se è passato almeno un giorno
-        if (now - lastSeen < ONE_DAY_MS) return;
+        const lastDismissed = parseInt(safeGetStorage(EVENT_POPUP_STORAGE_KEY) || '0', 10);
+        if (Number.isFinite(lastDismissed) && lastDismissed > 0 && now - lastDismissed < EVENT_POPUP_COOLDOWN) {
+            return;
+        }
 
         window.setTimeout(() => {
-            createProfilePopup();
-            safeSetStorage(POPUP_STORAGE_KEY, now.toString());
-        }, POPUP_DELAY);
+            buildEventPopup();
+        }, EVENT_POPUP_DELAY);
     };
 
     if (document.readyState === 'complete') {
-        showProfilePopupOncePerDay();
+        maybeShowEventPopup();
     } else {
-        window.addEventListener('load', showProfilePopupOncePerDay, { once: true });
+        window.addEventListener('load', maybeShowEventPopup, { once: true });
     }
 })();
