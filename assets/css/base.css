@@ -1,0 +1,83 @@
+:root {
+    --brand-900: #0b1231;
+    --brand-800: #111f4b;
+    --brand-700: #152a63;
+    --brand-600: #183a83;
+    --brand-500: #1f5ed4;
+    --brand-400: #2f7cf7;
+    --brand-300: #7ab6ff;
+    --pink-500: #f2569d;
+    --pink-400: #ff83c2;
+    --aqua-400: #31f1d1;
+    --yellow-400: #ffd26b;
+    --neutral-50: #f7f8ff;
+    --neutral-100: #eef1ff;
+    --neutral-200: #d5dcff;
+    --neutral-700: #1d2340;
+    --neutral-500: #475072;
+    --shadow-lg: 0 40px 90px rgba(16, 30, 84, 0.28);
+    --shadow-md: 0 25px 60px rgba(24, 55, 120, 0.18);
+    --radius-xl: 40px;
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --radius-sm: 12px;
+    --header-height: 84px;
+    --font-heading: 'Space Grotesk', 'Poppins', 'Inter', 'Segoe UI', sans-serif;
+    --font-body: 'Inter', 'Manrope', 'Segoe UI', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--neutral-50);
+    background: radial-gradient(circle at top left, rgba(49, 241, 209, 0.12), transparent 45%),
+    radial-gradient(circle at 20% 70%, rgba(242, 86, 157, 0.2), transparent 60%),
+    linear-gradient(135deg, var(--brand-900), var(--brand-700));
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--aqua-400);
+    outline-offset: 4px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.skip-link {
+    position: absolute;
+    left: 1.5rem;
+    top: -3rem;
+    background: var(--aqua-400);
+    color: var(--brand-900);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    transition: top 0.3s ease;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}

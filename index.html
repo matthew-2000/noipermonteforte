@@ -13,7 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <script async src="https://cdn.counter.dev/script.js" data-id="8aaafea2-80ca-4f07-848b-a71a7f299cbf" data-utcoffset="1"></script>
 </head>
 <body class="page-home">
@@ -43,7 +46,7 @@
                 </ul>
             </nav>
             <div class="header-action">
-                <a class="btn btn-primary" href="#perche-votarci">Perché votarci</a>
+                <a class="btn btn-primary" href="#percorsi">Apri le sezioni</a>
             </div>
         </div>
     </header>
@@ -52,13 +55,13 @@
         <section id="hero" class="hero" data-animate>
             <div class="container hero__inner">
                 <div class="hero__content">
-                    <span class="hero__pill">Monteforte 2024</span>
+                    <span class="hero__pill">Monteforte 2025</span>
                     <h1>Persone, ascolto e responsabilità per Monteforte</h1>
                     <p>“Noi per Monteforte” è la lista civica guidata da Giulia Valentino. In questa pagina trovi subito i temi del programma: partecipazione, territorio sicuro, welfare di comunità, ambiente, innovazione e cultura.</p>
                     <div class="hero__actions">
-                        <a class="btn btn-primary" href="#perche-votarci">Scopri i punti chiave</a>
-                        <a class="btn btn-secondary" href="#programma">Consulta le aree tematiche</a>
-                        <a class="btn btn-link" href="assets/pdf/programma-noi-per-monteforte.pdf" download>Scarica il PDF</a>
+                        <a class="btn btn-primary" href="#percorsi">Esplora il sito</a>
+                        <a class="btn btn-secondary" href="chi-siamo.html">Conosci la squadra</a>
+                        <a class="btn btn-link" href="assets/pdf/programma-noi-per-monteforte.pdf" download>Scarica il programma</a>
                     </div>
                 </div>
                 <div class="hero__media">
@@ -74,88 +77,69 @@
             </div>
         </section>
 
-        <section class="section section--alt" id="perche-votarci" data-animate>
+        <section class="section home-presentation" id="presentazione" data-animate>
             <div class="container">
-                <div class="section-heading">
-                    <h2>Perché il tuo voto per Noi per Monteforte fa la differenza</h2>
-                    <p>Il programma nasce dagli incontri nei quartieri e mette al centro trasparenza, cura del territorio e servizi vicini alle persone. Qui trovi i tre pilastri da cui partire.</p>
-                </div>
-                <div class="values-grid values-grid--pillars">
-                    <article class="card card--pillar">
-                        <h3>Partecipazione e trasparenza</h3>
-                        <p>Monteforte Informa, piattaforma segnalazioni e report mensili per rendere conto di ogni scelta.</p>
-                        <a href="programma.html#partecipazione-trasparenza">Scopri le azioni</a>
-                    </article>
-                    <article class="card card--pillar">
-                        <h3>Territorio sicuro e mobilità</h3>
-                        <p>Prevenzione del rischio idrogeologico, manutenzione programmata, piano parcheggi e strade più sicure.</p>
-                        <a href="programma.html#territorio-urbanistica">Guarda gli interventi</a>
-                    </article>
-                    <article class="card card--pillar">
-                        <h3>Welfare di comunità</h3>
-                        <p>Rete del Sociale, Sportello Sociale Unico, sostegno alle famiglie e opportunità per giovani e anziani.</p>
-                        <a href="programma.html#politiche-sociali">Leggi le proposte</a>
-                    </article>
+                <div class="presentation-card">
+                    <div class="presentation-card__content">
+                        <span class="presentation-card__eyebrow">Evento in evidenza</span>
+                        <h2>Presentazione ufficiale della lista “Noi per Monteforte”</h2>
+                        <p>Una serata per raccontare le idee, presentare le candidate e i candidati e ascoltare le domande della città. Ti aspettiamo per condividere visione, metodo e stile di governo.</p>
+                        <dl class="presentation-card__details">
+                            <div class="presentation-card__detail">
+                                <dt>Quando</dt>
+                                <dd>Venerdì 7 novembre · ore 20:00</dd>
+                            </div>
+                            <div class="presentation-card__detail">
+                                <dt>Dove</dt>
+                                <dd>Comitato elettorale, via Alvanella</dd>
+                            </div>
+                        </dl>
+                        <div class="presentation-card__actions">
+                            <a class="btn btn-primary" href="#eventi">Guarda gli altri incontri</a>
+                            <a class="btn btn-secondary" href="https://fb.me/e/9shkHSOJh">Conferma la tua presenza</a>
+                        </div>
+                    </div>
+                    <div class="presentation-card__media" aria-hidden="true">
+                        <div class="presentation-card__date">
+                            <span class="presentation-card__day">7</span>
+                            <span class="presentation-card__month">Nov</span>
+                        </div>
+                        <img src="assets/img/logo.png" alt="" loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="programma" data-animate>
+        <section class="section section--alt home-overview" id="percorsi" data-animate>
             <div class="container">
                 <div class="section-heading">
-                    <h2>Il programma in sintesi</h2>
-                    <p>Le proposte sono organizzate per temi. Ogni area collega azioni concrete presenti nel programma completo.</p>
+                    <h2>Panoramica in un colpo d'occhio</h2>
+                    <p>Porte di accesso rapide per capire chi siamo, cosa proponiamo e come contattarci. Ogni card apre la sezione dedicata, così puoi approfondire in base a ciò che ti interessa davvero.</p>
                 </div>
-                <div class="program-overview">
-                    <article class="program-card">
-                        <h3>Trasparenza e uffici</h3>
-                        <ul>
-                            <li>Canale Monteforte Informa per aggiornare i cittadini su lavori e servizi.</li>
-                            <li>Piattaforma segnalazioni con ticket tracciabile fino alla soluzione.</li>
-                            <li>Formazione del personale e task force per fondi europei e nazionali.</li>
-                        </ul>
+                <div class="overview-grid">
+                    <article class="overview-card">
+                        <span class="overview-card__eyebrow">Chi siamo</span>
+                        <h3>Una squadra trasversale e competente</h3>
+                        <p>Professionisti, giovani e volontari che conoscono Monteforte e mettono a disposizione esperienza e ascolto.</p>
+                        <a class="btn btn-secondary" href="chi-siamo.html">Scopri chi siamo</a>
                     </article>
-                    <article class="program-card">
-                        <h3>Territorio e mobilità</h3>
-                        <ul>
-                            <li>Prevenzione del rischio idrogeologico e cura programmata del verde.</li>
-                            <li>Piano parcheggi con nuovi stalli e regole semplici.</li>
-                            <li>Messa in sicurezza di strade, marciapiedi e collegamenti ciclabili.</li>
-                        </ul>
+                    <article class="overview-card">
+                        <span class="overview-card__eyebrow">Programma</span>
+                        <h3>Priorità chiare per i prossimi cinque anni</h3>
+                        <p>Mobilità, scuola, sociale, innovazione e ambiente: scopri il metodo e le azioni concrete della proposta amministrativa.</p>
+                        <a class="btn btn-secondary" href="programma.html">Leggi il programma</a>
                     </article>
-                    <article class="program-card">
-                        <h3>Comunità e welfare</h3>
-                        <ul>
-                            <li>Rete del Sociale Montefortese e Sportello Sociale Unico.</li>
-                            <li>Centri famiglia, doposcuola e baby-parking per conciliare tempi di vita.</li>
-                            <li>Monteforte Giovani Lab con corsi, spazi studio e volontariato civico.</li>
-                        </ul>
+                    <article class="overview-card">
+                        <span class="overview-card__eyebrow">Incontri</span>
+                        <h3>Quartieri, piazze e confronti aperti</h3>
+                        <p>Siamo presenti sul territorio con appuntamenti mirati: partecipa, porta un'idea, fai una domanda alla candidata.</p>
+                        <a class="btn btn-secondary" href="#eventi">Consulta il calendario</a>
                     </article>
-                </div>
-                <div class="program-overview">
-                    <article class="program-card">
-                        <h3>Ambiente e centro storico</h3>
-                        <ul>
-                            <li>Riqualificazione del borgo con pavimentazioni, arredo urbano e illuminazione.</li>
-                            <li>Piantumazioni, rinaturalizzazioni e partecipazione al Conto Termico.</li>
-                            <li>Sezione turistica sul sito comunale con percorsi ed eventi locali.</li>
-                        </ul>
-                    </article>
-                    <article class="program-card">
-                        <h3>Sicurezza e prevenzione</h3>
-                        <ul>
-                            <li>Più presidio con Polizia Locale, tavolo con le forze dell’ordine e videosorveglianza.</li>
-                            <li>Punto Sicurezza in Comune e progetti contro bullismo e cyberbullismo.</li>
-                            <li>Defibrillatori nei luoghi pubblici e corsi di formazione per i cittadini.</li>
-                        </ul>
-                    </article>
-                    <article class="program-card">
-                        <h3>Innovazione e pari opportunità</h3>
-                        <ul>
-                            <li>Strumenti digitali per analizzare segnalazioni e monitorare i servizi.</li>
-                            <li>Ufficio Pari Opportunità e corsi di italiano per chi arriva da altri Paesi.</li>
-                            <li>Biblioteca come hub culturale con coworking e “Scuola in Piazza”.</li>
-                        </ul>
+                    <article class="overview-card">
+                        <span class="overview-card__eyebrow">Documenti</span>
+                        <h3>Materiali da condividere con chi vuoi</h3>
+                        <p>Scarica il programma in PDF e condividilo con amici, familiari e vicini per far conoscere la lista.</p>
+                        <a class="btn btn-secondary" href="assets/pdf/programma-noi-per-monteforte.pdf" download>Scarica il PDF</a>
                     </article>
                 </div>
             </div>
@@ -165,100 +149,91 @@
             <div class="container">
                 <div class="section-heading">
                     <h2>Incontri sul territorio</h2>
-                    <p>Vieni a confrontarti con Giulia Valentino e la squadra: appuntamenti nei quartieri per raccogliere idee e raccontare il programma.</p>
+                    <p>Vieni a incontrare Giulia Valentino e la squadra: momenti di ascolto e dialogo nei quartieri per parlare insieme del futuro della città.</p>
                 </div>
-                <div class="events-agenda">
+                <div class="events-agenda events-agenda--timeline">
                     <article class="event-card">
-                        <div class="event-card__meta">
-                            <span class="event-card__day">Sabato</span>
-                            <span class="event-card__date">8 Novembre</span>
-                            <span class="event-card__time">ore 15:30</span>
-                        </div>
-                        <div class="event-card__details">
+                        <span class="event-card__bullet" aria-hidden="true"></span>
+                        <header class="event-card__header">
+                            <span class="event-card__weekday">Sabato</span>
+                            <span class="event-card__date">8 novembre</span>
+                        </header>
+                        <div class="event-card__body">
                             <h3>Parco degli Argonauti</h3>
-                            <p>Alvanella</p>
+                            <p class="event-card__location">Alvanella</p>
+                            <p class="event-card__time">Ore 15:30</p>
+                            <p class="event-card__note">Un pomeriggio di confronto e ascolto con i cittadini del quartiere.</p>
                         </div>
                     </article>
                     <article class="event-card">
-                        <div class="event-card__meta">
-                            <span class="event-card__day">Domenica</span>
-                            <span class="event-card__date">9 Novembre</span>
-                            <span class="event-card__time">ore 15:30</span>
-                        </div>
-                        <div class="event-card__details">
-                            <h3>Incontro in piazza</h3>
-                            <p>Località Gaudi</p>
-                        </div>
-                    </article>
-                    <article class="event-card">
-                        <div class="event-card__meta">
-                            <span class="event-card__day">Sabato</span>
-                            <span class="event-card__date">15 Novembre</span>
-                            <span class="event-card__time">ore 15:30</span>
-                        </div>
-                        <div class="event-card__details">
+                        <span class="event-card__bullet" aria-hidden="true"></span>
+                        <header class="event-card__header">
+                            <span class="event-card__weekday">Domenica</span>
+                            <span class="event-card__date">9 novembre</span>
+                        </header>
+                        <div class="event-card__body">
                             <h3>Ascolto nei quartieri</h3>
-                            <p>Località Borgo</p>
+                            <p class="event-card__location">Località Gaudi</p>
+                            <p class="event-card__time">Ore 15:30</p>
+                            <p class="event-card__note">Incontro aperto con i cittadini per discutere idee e proposte per la comunità.</p>
                         </div>
                     </article>
                     <article class="event-card">
-                        <div class="event-card__meta">
-                            <span class="event-card__day">Sabato</span>
-                            <span class="event-card__date">15 Novembre</span>
-                            <span class="event-card__time">ore 16:30</span>
-                        </div>
-                        <div class="event-card__details">
-                            <h3>Incontro con i residenti</h3>
-                            <p>Località Molinelle</p>
-                        </div>
-                    </article>
-                    <article class="event-card">
-                        <div class="event-card__meta">
-                            <span class="event-card__day">Domenica</span>
-                            <span class="event-card__date">16 Novembre</span>
-                            <span class="event-card__time">ore 11:00</span>
-                        </div>
-                        <div class="event-card__details">
-                            <h3>Dialogo con la candidata</h3>
-                            <p>Piazza Umberto I</p>
+                        <span class="event-card__bullet" aria-hidden="true"></span>
+                        <header class="event-card__header">
+                            <span class="event-card__weekday">Sabato</span>
+                            <span class="event-card__date">15 novembre</span>
+                        </header>
+                        <div class="event-card__body">
+                            <h3>Ascolto nei quartieri</h3>
+                            <p class="event-card__location">Località Borgo</p>
+                            <p class="event-card__time">Ore 15:30</p>
+                            <p class="event-card__note">Dialogo con i residenti per condividere esperienze e visioni sulla città.</p>
                         </div>
                     </article>
                     <article class="event-card">
-                        <div class="event-card__meta">
-                            <span class="event-card__day">Domenica</span>
-                            <span class="event-card__date">16 Novembre</span>
-                            <span class="event-card__time">ore 15:30</span>
+                        <span class="event-card__bullet" aria-hidden="true"></span>
+                        <header class="event-card__header">
+                            <span class="event-card__weekday">Sabato</span>
+                            <span class="event-card__date">15 novembre</span>
+                        </header>
+                        <div class="event-card__body">
+                            <h3>Ascolto nei quartieri</h3>
+                            <p class="event-card__location">Località Molinelle</p>
+                            <p class="event-card__time">Ore 16:30</p>
+                            <p class="event-card__note">Incontro informale con Giulia Valentino e la squadra per ascoltare le esigenze del territorio.</p>
                         </div>
-                        <div class="event-card__details">
-                            <h3>Assemblea comunitaria</h3>
-                            <p>Piazzale centro Fenestrelle, via A. Moro</p>
+                    </article>
+                    <article class="event-card">
+                        <span class="event-card__bullet" aria-hidden="true"></span>
+                        <header class="event-card__header">
+                            <span class="event-card__weekday">Domenica</span>
+                            <span class="event-card__date">16 novembre</span>
+                        </header>
+                        <div class="event-card__body">
+                            <h3>Ascolto nei quartieri</h3>
+                            <p class="event-card__location">Piazza Umberto I</p>
+                            <p class="event-card__time">Ore 11:00</p>
+                            <p class="event-card__note">Confronto aperto con i cittadini sul futuro del centro e della comunità.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <span class="event-card__bullet" aria-hidden="true"></span>
+                        <header class="event-card__header">
+                            <span class="event-card__weekday">Domenica</span>
+                            <span class="event-card__date">16 novembre</span>
+                        </header>
+                        <div class="event-card__body">
+                            <h3>Ascolto nei quartieri</h3>
+                            <p class="event-card__location">Piazzale centro Fenestrelle, via A. Moro</p>
+                            <p class="event-card__time">Ore 15:30</p>
+                            <p class="event-card__note">Un incontro per chiudere insieme il percorso di ascolto nei quartieri.</p>
                         </div>
                     </article>
                 </div>
                 <div class="events-cta">
-                    <a class="btn btn-primary" href="contatti.html">Scrivici per maggiori informazioni</a>
-                    <p>Ti risponderemo con gli aggiornamenti logistici e con eventuali variazioni del calendario.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="partecipa" data-animate>
-            <div class="container">
-                <div class="section-heading">
-                    <h2>Partecipa alla campagna</h2>
-                    <p>Due azioni rapide per restare aggiornato: leggi il programma completo e contatta direttamente il comitato.</p>
-                </div>
-                <div class="participate-grid participate-grid--compact">
-                    <article class="participate-card">
-                        <h3>Scarica e condividi</h3>
-                        <p>Il programma di lista è disponibile in PDF: condividilo con amici e vicini di casa.</p>
-                        <a class="btn btn-secondary" href="assets/pdf/programma-noi-per-monteforte.pdf" download>Scarica il programma</a>
-                    </article>
-                    <article class="participate-card">
-                        <h3>Scrivici un messaggio</h3>
-                        <p>Per domande o proposte, rispondiamo rapidamente via email e sui canali social ufficiali.</p>
-                        <a class="btn btn-secondary" href="contatti.html">Vai alla pagina contatti</a>
-                    </article>
+                    <a class="btn btn-primary" href="contatti.html">Scrivici per informazioni logistiche</a>
+                    <p>Ti aggiorneremo su eventuali variazioni e raccoglieremo richieste per organizzare incontri nel tuo quartiere.</p>
                 </div>
             </div>
         </section>
