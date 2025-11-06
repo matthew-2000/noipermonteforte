@@ -114,12 +114,12 @@
                 <span class="event-popup__eyebrow">Evento in evidenza</span>
                 <p class="event-popup__title">Presentazione ufficiale della lista e del programma</p>
                 <div class="event-popup__details">
-                    <span>🗓️ Venerdì 7 Novembre – ore 20:00</span>
+                    <span>🗓️ Venerdì 7 Novembre – ore 19:00</span>
                     <span>📍 Comitato elettorale, via Alvanella</span>
                 </div>
                 <div class="event-popup__actions">
                     <button type="button" class="event-popup__close" aria-label="Chiudi promemoria">Chiudi</button>
-                    <a class="event-popup__link" href="#eventi">Scopri di più</a>
+                    <a class="event-popup__link" href="#presentazione">Scopri di più</a>
                 </div>
             </div>
         `;
