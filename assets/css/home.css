@@ -34,6 +34,16 @@
     transition: transform 0.35s ease, border-color 0.35s ease;
 }
 
+.overview-card--accent {
+    background: linear-gradient(135deg, rgba(49, 241, 209, 0.18), rgba(242, 86, 157, 0.18));
+    border-color: rgba(49, 241, 209, 0.35);
+    box-shadow: var(--shadow-lg);
+}
+
+.overview-card--accent .overview-card__eyebrow {
+    color: var(--aqua-400);
+}
+
 .overview-card:hover {
     transform: translateY(-8px);
     border-color: rgba(255, 255, 255, 0.28);
